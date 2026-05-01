@@ -1,0 +1,17 @@
+<h1>Admin Panel</h1>
+
+<% tickets.forEach(ticket => { %>
+  <div>
+    <p><%= ticket.name %> - <%= ticket.issue %></p>
+    <p>Status: <%= ticket.status %></p>
+
+    <form action="/update/<%= ticket.id %>" method="POST">
+      <select name="status">
+        <option>Open</option>
+        <option>In Progress</option>
+        <option>Closed</option>
+      </select>
+      <button>Update</button>
+    </form>
+  </div>
+<% }) %>

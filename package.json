@@ -9,6 +9,10 @@
     "test": "echo \"No tests\" && exit 0"
   },
   "dependencies": {
-    "express": "^5.2.1"
+    "body-parser": "^2.2.2",
+    "dotenv": "^17.4.2",
+    "ejs": "^5.0.2",
+    "express": "^5.2.1",
+    "mysql2": "^3.22.3"
   }
 }
